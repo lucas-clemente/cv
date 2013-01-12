@@ -1,0 +1,125 @@
+@import "github";
+
+@gridColumns: 9;
+@headingsFontFamily: 'Open Sans', sans-serif;
+@sansFontFamily: 'Source Sans Pro', sans-serif;
+@headingsFontWeight: 300;
+
+@darkGray: #888;
+
+h2, h3, h4, h5, h6 {
+  color: @darkGray;
+}
+
+@phoneWidth: 768px;
+@phoneMinWidth: @phoneWidth - 1;
+
+@font-size-right: @baseFontSize;
+
+footer {
+  margin-top: 2em;
+  font-size: @fontSizeSmall;
+}
+
+#fork-me {
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+  }
+}
+
+.screen {
+  @media print {
+    display: none;
+  }
+}
+
+.pdf {
+  @media screen {
+    display: none;
+  }
+}
+
+@media (min-width: @phoneWidth), print {
+  #column-right {
+    border-left: 1px solid #eee;
+    .box-sizing(border-box);
+  }
+  #column-right-inner {
+    padding-left: 10px;
+  }
+}
+
+#column-right {
+  font-size: @font-size-right;
+}
+
+dt {
+  font-family: @headingsFontFamily;
+  font-weight: 400;
+  color: @darkGray;
+}
+
+dd {
+  margin-bottom: 1em;
+}
+
+#table-skills {
+  td:first-child {
+    padding-bottom: 0.4em;
+    padding-right: 1em;
+  }
+
+  td:nth-child(2) {
+    font-size: 1.2em;
+    color: @darkGray;
+  }
+}
+
+#publication-list {
+  font-size: @fontSizeMini;
+}
+
+.entry {
+  @entryPadding: 120px;
+
+  position: relative;
+  padding-left: @entryPadding;
+  padding-bottom: 1em;
+  padding-top: 1em;
+
+  .duration {
+    font-size: @fontSizeSmall;
+    position: absolute;
+    margin-left: -@entryPadding;
+    margin-top: 0.2em;
+  }
+
+  .title {
+    display: inline;
+    font-size: 1.3em;
+    font-family: @headingsFontFamily;
+    font-weight: 400;
+  }
+
+  .location {
+    font-family: @headingsFontFamily;
+    font-weight: 400;
+  }
+
+  .description {
+    color: @darkGray;
+  }
+}
+
+
+
+
+
+
+
+
+
+

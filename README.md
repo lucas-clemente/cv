@@ -1,0 +1,11 @@
+# CV Lucas Clemente #
+
+[See it in action](http://lucas-clemente.github.com/cv)
+
+I was bored of using Pages / Word / LaTeX to write my CVs, so I tried HTML. It was fun! The PDF version was created using Chrome.
+
+Check out the source and fork it!
+
+## License ##
+
+[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
