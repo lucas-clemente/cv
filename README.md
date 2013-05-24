@@ -1,6 +1,6 @@
 # CV Lucas Clemente #
 
-[See it in action](http://lclemente.org)
+[See it in action](http://clemente.io)
 
 I was bored of using Pages / Word / LaTeX to write my CVs, so I tried HTML. It was fun! The PDF version was created using Chrome.
 
