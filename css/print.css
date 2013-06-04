@@ -2565,7 +2565,7 @@ ul.icons li .icon-large:before {
 .open {
   *z-index: 1000;
 }
-.open  > .dropdown-menu {
+.open > .dropdown-menu {
   display: block;
 }
 .pull-right > .dropdown-menu {
@@ -5211,7 +5211,7 @@ a.badge:hover {
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
   background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
   background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
-  filter: progid:dximagetransform.microsoft.gradient(GradientType=0, StartColorStr='#000000', EndColorStr='#000000');
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#000000', EndColorStr='#000000');
   /* Add a drop shadow */
 
   -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
@@ -5283,7 +5283,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #888888;
+  color: #555555;
 }
 footer {
   margin-top: 2em;
@@ -5319,7 +5319,7 @@ footer {
 dt {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  color: #888888;
+  color: #555555;
 }
 dd {
   margin-bottom: 1em;
@@ -5350,7 +5350,7 @@ dd {
   font-weight: 400;
 }
 .entry .description {
-  color: #888888;
+  color: #555555;
 }
 body {
   -webkit-print-color-adjust: exact;
