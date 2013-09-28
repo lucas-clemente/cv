@@ -1,14 +1,15 @@
 @import "github";
 
-@gridColumns: 9;
 @headingsFontFamily: 'Open Sans', sans-serif;
-@sansFontFamily: 'Source Sans Pro', sans-serif;
-@headingsFontWeight: 300;
+@font-family-sans-serif: 'Source Sans Pro', sans-serif;
+@fontSizeSmall: 0.85em;
 
 @darkGray: #555;
 
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   color: @darkGray;
+  font-weight: 300;
+  font-family: @headingsFontFamily;
 }
 
 @phoneWidth: 768px;
@@ -28,26 +29,17 @@ footer {
   }
 }
 
-.screen {
-  @media print {
-    display: none;
-  }
-}
-
-.pdf {
-  @media screen {
-    display: none;
-  }
-}
-
 @media (min-width: @phoneWidth), print {
   #column-right {
-    border-left: 1px solid #eee;
-    .box-sizing(border-box);
+    border-left: 1px solid #ddd;
   }
   #column-right-inner {
     padding-left: 10px;
   }
+}
+
+.page-header {
+  border-bottom: 1px solid #ddd;
 }
 
 dt {
@@ -58,10 +50,15 @@ dt {
 
 dd {
   margin-bottom: 1em;
+  margin-left: 10px;
 }
 
 #publication-list {
   font-size: @fontSizeSmall;
+
+  li {
+    line-height: 20px;
+  }
 }
 
 .entry {

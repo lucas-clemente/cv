@@ -1,22 +1,12 @@
+@import "bootstrap/variables";
 @import "bootstrap/bootstrap";
-@import "bootstrap/responsive";
 @import "share";
 
+@container-lg-desktop: 940px;
+
 body {
-  @media (min-width: @phoneWidth) {
-    // http://subtlepatterns.com/fabric-plaid/
-    background-image: url("../background.png");
-    background-size: 200px 200px;
-  }
 }
 
 #main {
-  @media (min-width: @phoneWidth) {
-    border: 1px #ddd solid;
-    box-shadow: 5px 5px 10px @darkGray;
-    background-color: #fff;
-    padding: 1em;
-  }
-
   margin-top: 1em;
 }
