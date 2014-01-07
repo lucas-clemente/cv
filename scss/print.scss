@@ -11,6 +11,10 @@ a[href]:after {
   content: "";
 }
 
+a {
+  color: rgb(66, 139, 202) !important;
+}
+
 .col-sm-8 {
   width: 66% !important;
   float: left !important;

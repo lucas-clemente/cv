@@ -149,6 +149,10 @@ a[href]:after {
   content: "";
 }
 
+a {
+  color: #428bca !important;
+}
+
 .col-sm-8 {
   width: 66% !important;
   float: left !important;
