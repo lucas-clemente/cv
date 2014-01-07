@@ -1,0 +1,100 @@
+@import "github";
+
+$headingsFontFamily: 'Open Sans', sans-serif;
+$fontSizeSmall: 0.85em;
+$darkGray: #555 !important; // Important because of bootstrap's print.less
+$phoneWidth: 768px;
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $darkGray;
+  font-weight: 300;
+  font-family: $headingsFontFamily;
+}
+
+
+footer {
+  margin-top: 2em;
+  font-size: $fontSizeSmall;
+}
+
+#fork-me {
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+  }
+}
+
+// Don't show vertical line on phones
+@media (min-width: $phoneWidth), print {
+  #column-right {
+    border-left: 1px solid #ddd;
+  }
+  #column-right-inner {
+    padding-left: 10px;
+  }
+}
+
+.page-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 45px;
+}
+
+dt {
+  font-family: $headingsFontFamily;
+  font-weight: 400;
+  color: $darkGray;
+}
+
+dd {
+  margin-bottom: 1em;
+  margin-left: 10px;
+}
+
+#publication-list {
+  font-size: $fontSizeSmall;
+
+  li {
+    line-height: 1.8em;
+    margin-bottom: 10px;
+  }
+}
+
+.entry {
+  $entryPadding: 120px;
+
+  position: relative;
+  padding-left: $entryPadding;
+  padding-bottom: 1.5em;
+  padding-top: 1em;
+
+  .duration {
+    font-size: $fontSizeSmall;
+    position: absolute;
+    margin-left: -$entryPadding;
+    margin-top: 0.2em;
+  }
+
+  .title {
+    display: inline;
+    font-size: 1.3em;
+    font-family: $headingsFontFamily;
+    font-weight: 400;
+  }
+
+  .location {
+    font-family: $headingsFontFamily;
+    font-weight: 400;
+  }
+
+  .description {
+    color: $darkGray;
+  }
+}

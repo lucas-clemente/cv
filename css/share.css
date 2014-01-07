@@ -137,24 +137,3 @@ dd {
 .entry .description {
   color: #555555 !important;
 }
-
-body {
-  -webkit-print-color-adjust: exact;
-  text-rendering: optimizeLegibility;
-  margin-top: 0;
-  font-size: 10px;
-}
-
-a[href]:after {
-  content: "";
-}
-
-.col-sm-8 {
-  width: 66% !important;
-  float: left !important;
-}
-
-.col-sm-4 {
-  width: 33% !important;
-  float: left !important;
-}
