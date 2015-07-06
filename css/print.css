@@ -61,7 +61,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #555555 !important;
+  color: #555 !important;
   font-weight: 300;
   font-family: "Open Sans", sans-serif;
 }
@@ -96,7 +96,7 @@ footer {
 dt {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: #555555 !important;
+  color: #555 !important;
 }
 
 dd {
@@ -135,7 +135,7 @@ dd {
   font-weight: 400;
 }
 .entry .description {
-  color: #555555 !important;
+  color: #555 !important;
 }
 
 body {
@@ -162,3 +162,5 @@ a {
   width: 33% !important;
   float: left !important;
 }
+
+/*# sourceMappingURL=print.css.map */
