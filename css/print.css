@@ -153,13 +153,13 @@ a {
   color: #428bca !important;
 }
 
-.col-sm-8 {
-  width: 66% !important;
+.col-sm-7 {
+  width: 58% !important;
   float: left !important;
 }
 
-.col-sm-4 {
-  width: 33% !important;
+.col-sm-5 {
+  width: 41% !important;
   float: left !important;
 }
 
