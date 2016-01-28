@@ -96,3 +96,7 @@ dd {
     color: $darkGray;
   }
 }
+
+@media print {
+  @import 'print';
+}
