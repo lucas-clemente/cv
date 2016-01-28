@@ -1,0 +1,15 @@
+{
+  "name": "CV",
+  "description": "https://clemente.io",
+  "main": "",
+  "authors": [
+    "Lucas Clemente"
+  ],
+  "license": "MIT",
+  "homepage": "https://clemente.io",
+  "moduleType": [],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.6",
+    "font-awesome": "fontawesome#^4.5.0"
+  }
+}
