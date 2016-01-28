@@ -9,15 +9,11 @@ $font-size-root: 15px;
 @import 'fa_custom';
 @import 'fonts';
 
-$darkGray: #333 !important; // Important because of bootstrap's print.less
-$phoneWidth: 768px;
-
 body {
   margin-top: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $darkGray;
   font-weight: 300;
 }
 
@@ -37,7 +33,7 @@ footer {
 }
 
 // Don't show vertical line on phones
-@media (min-width: $phoneWidth), print {
+@include media-breakpoint-up(sm), print {
   #column-right {
     border-left: 1px solid #ddd;
   }
@@ -55,7 +51,6 @@ footer {
 dt {
   font-family: $headings-font-family;
   font-weight: 400;
-  color: $darkGray;
 }
 
 dd {
@@ -97,10 +92,6 @@ dd {
   .location {
     font-family: $headings-font-family;
     font-weight: 400;
-  }
-
-  .description {
-    color: $darkGray;
   }
 }
 
