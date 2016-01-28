@@ -7,7 +7,7 @@ var publicFiles = 'public';
 var cssFiles = compileSass(
   [
     'styles',
-    'bower_components/bootstrap-sass/assets/stylesheets',
+    'bower_components',
     'bower_components/font-awesome/scss'
   ],
   'app.scss',

@@ -1,28 +1,30 @@
+$enable-flex: true;
+
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
+$headings-font-family: 'Open Sans', sans-serif;
+$font-size-root: 15px;
+
 @import 'bootstrap_custom';
 
 @import 'fa_custom';
 @import 'fonts';
 
-$headingsFontFamily: 'Open Sans', sans-serif;
-$fontSizeSmall: 0.85em;
-$darkGray: #555 !important; // Important because of bootstrap's print.less
+$darkGray: #333 !important; // Important because of bootstrap's print.less
 $phoneWidth: 768px;
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
   margin-top: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: $darkGray;
   font-weight: 300;
-  font-family: $headingsFontFamily;
 }
 
 
 footer {
   margin-top: 2em;
-  font-size: $fontSizeSmall;
+  font-size: $font-size-sm;
 }
 
 #fork-me {
@@ -51,7 +53,7 @@ footer {
 }
 
 dt {
-  font-family: $headingsFontFamily;
+  font-family: $headings-font-family;
   font-weight: 400;
   color: $darkGray;
 }
@@ -62,7 +64,7 @@ dd {
 }
 
 #publication-list {
-  font-size: $fontSizeSmall;
+  font-size: $font-size-sm;
 
   li {
     line-height: 1.8em;
@@ -79,7 +81,7 @@ dd {
   padding-top: 1em;
 
   .duration {
-    font-size: $fontSizeSmall;
+    font-size: $font-size-sm;
     position: absolute;
     margin-left: -$entryPadding;
     margin-top: 0.2em;
@@ -88,12 +90,12 @@ dd {
   .title {
     display: inline;
     font-size: 1.3em;
-    font-family: $headingsFontFamily;
+    font-family: $headings-font-family;
     font-weight: 400;
   }
 
   .location {
-    font-family: $headingsFontFamily;
+    font-family: $headings-font-family;
     font-weight: 400;
   }
 

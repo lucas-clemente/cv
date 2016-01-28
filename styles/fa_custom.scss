@@ -1,14 +1,14 @@
 $fa-font-path: 'fonts';
 
-@import "variables";
-@import "mixins";
-@import "path";
-@import "core";
-// @import "larger";
-// @import "fixed-width";
-@import "list";
-// @import "bordered-pulled";
-// @import "animated";
-// @import "rotated-flipped";
-// @import "stacked";
-@import "icons";
+@import "font-awesome/scss/variables";
+@import "font-awesome/scss/mixins";
+@import "font-awesome/scss/path";
+@import "font-awesome/scss/core";
+// @import "font-awesome/scss/larger";
+// @import "font-awesome/scss/fixed-width";
+@import "font-awesome/scss/list";
+// @import "font-awesome/scss/bordered-pulled";
+// @import "font-awesome/scss/animated";
+// @import "font-awesome/scss/rotated-flipped";
+// @import "font-awesome/scss/stacked";
+@import "font-awesome/scss/icons";
