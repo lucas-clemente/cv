@@ -3,6 +3,7 @@
 $font-family-sans-serif: 'Source Sans Pro', sans-serif;
 $headings-font-family: 'Open Sans', sans-serif;
 $font-size-root: 15px;
+$line-color: #ddd;
 
 @import 'bootstrap_custom';
 
@@ -18,39 +19,36 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3em;
   font-family: $headings-font-family;
+  font-size: 1.3em;
   font-weight: 400;
 }
 
 footer {
-  margin-top: 2em;
   font-size: $font-size-sm;
-}
-
-#fork-me {
-  img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: 0;
-  }
+  margin-top: 2em;
 }
 
 // Don't show vertical line on phones
-@include media-breakpoint-up(sm), print {
-  #column-right {
-    border-left: 1px solid #ddd;
-  }
-  #column-right-inner {
-    padding-left: 10px;
+@mixin show-line {
+  aside {
+    border-left: 1px solid $line-color;
   }
 }
 
+@include media-breakpoint-up(sm) {
+  @include show-line;
+}
+
+@media print {
+  @include show-line;
+}
+
+
 .page-header {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 20px;
+  border-bottom: 1px solid $line-color;
   margin-bottom: 45px;
+  padding-bottom: 20px;
 }
 
 dt {
@@ -63,7 +61,7 @@ dd {
   margin-left: 10px;
 }
 
-#publication-list {
+.publication-list {
   font-size: $font-size-sm;
 
   li {
@@ -73,18 +71,21 @@ dd {
 }
 
 section {
-  $entryPadding: 120px;
+  $duration-width: 7rem;
+  $duration-padding: 0.4rem;
 
-  position: relative;
-  padding-left: $entryPadding;
   padding-bottom: 1.5em;
+  padding-left: $duration-width + $duration-padding;
   padding-top: 1em;
+  position: relative;
 
   .duration {
     font-size: $font-size-sm;
-    position: absolute;
-    margin-left: -$entryPadding;
+    margin-left: -$duration-width - $duration-padding;
     margin-top: 0.2em;
+    padding-right: $duration-padding;
+    position: absolute;
+    width: $duration-width;
   }
 
   p {
@@ -104,11 +105,11 @@ section {
   }
 
   .label-ember {
-    @include label-variant(#F23818);
+    @include label-variant(#f23818);
   }
 
   .label-rails {
-    @include label-variant(#cc0000);
+    @include label-variant(#c00);
   }
 
   .label-go {
