@@ -125,6 +125,12 @@ section {
   }
 }
 
+.hello {
+  font-family: $headings-font-family;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
 @media print {
   body {
     margin-top: 0;
