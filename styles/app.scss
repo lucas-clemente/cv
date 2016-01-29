@@ -89,9 +89,41 @@ dd {
     font-weight: 400;
   }
 
+  .locations {
+    margin-top: 0.5rem;
+  }
+
   .location {
     font-family: $headings-font-family;
     font-weight: 400;
+  }
+
+  .labels {
+    float: right;
+  }
+
+  .label-cpp {
+    @include label-variant(#045088);
+  }
+
+  .label-ember {
+    @include label-variant(#F23818);
+  }
+
+  .label-rails {
+    @include label-variant(#cc0000);
+  }
+
+  .label-go {
+    @include label-variant(darken(#90e4e6, 20%));
+  }
+
+  .label-mathematica {
+    @include label-variant(#f4792f);
+  }
+
+  .label-python {
+    @include label-variant(darken(#ffe260, 20%));
   }
 }
 
