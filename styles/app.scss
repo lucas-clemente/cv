@@ -13,10 +13,15 @@ body {
   margin-top: 10px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
   font-weight: 300;
 }
 
+h2 {
+  font-size: 1.3em;
+  font-family: $headings-font-family;
+  font-weight: 400;
+}
 
 footer {
   margin-top: 2em;
@@ -82,20 +87,12 @@ dd {
     margin-top: 0.2em;
   }
 
-  .title {
-    display: inline;
-    font-size: 1.3em;
-    font-family: $headings-font-family;
-    font-weight: 400;
-  }
-
-  .locations {
-    margin-top: 0.5rem;
+  p {
+    margin-bottom: 0.5rem;
   }
 
   .location {
     font-family: $headings-font-family;
-    font-weight: 400;
   }
 
   .labels {
