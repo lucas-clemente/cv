@@ -125,5 +125,24 @@ section {
 }
 
 @media print {
-  @import 'print';
+  body {
+    margin-top: 0;
+    -webkit-print-color-adjust: exact;
+    text-rendering: optimizeLegibility;
+    zoom: 60%;
+  }
+
+  .col-sm-7 {
+    float: left !important;
+    width: 58% !important;
+  }
+
+  .col-sm-5 {
+    float: left !important;
+    width: 41% !important;
+  }
+
+  .label {
+    border: 0;
+  }
 }
