@@ -1,4 +1,4 @@
-$enable-flex: true;
+// $enable-flex: true;
 
 $font-family-sans-serif: 'Source Sans Pro', sans-serif;
 $headings-font-family: 'Open Sans', sans-serif;
@@ -10,7 +10,7 @@ $font-size-root: 15px;
 @import 'fonts';
 
 body {
-  margin-top: 10px;
+  margin-top: 2rem;
 }
 
 h1 {
