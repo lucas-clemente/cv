@@ -63,6 +63,9 @@ dd {
 
 .publication-list {
   font-size: $font-size-sm;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 
   li {
     line-height: 1.8em;
