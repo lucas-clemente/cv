@@ -134,6 +134,12 @@ section {
   font-weight: 300;
 }
 
+.fa-li {
+  // fixes a weird alignment issue
+  // TODO improve
+  line-height: 1.3;
+}
+
 @media print {
   html {
     font-size: 8px;
