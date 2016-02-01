@@ -18,10 +18,26 @@ body {
 }
 
 h1 {
-  border-bottom: 1px solid $line-color;
   font-weight: 300;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   padding-bottom: 1rem;
+}
+
+.header-line {
+  animation: 0.5s ease-in 0s grow;
+
+  border-bottom: 1px solid $line-color;
+  margin-bottom: 2rem;
+}
+
+@keyframes grow {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 h2 {
