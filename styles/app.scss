@@ -100,31 +100,49 @@ section {
   }
 
   .labels {
-    float: right;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    line-height: 0.5rem;
+  }
+
+  $color-default:     lighten($label-default-bg, 20%);
+  $color-cpp:         #045088;
+  $color-ember:       #f23818;
+  $color-rails:       #c00;
+  $color-go:          darken(#90e4e6, 20%);
+  $color-mathematica: #f4792f;
+  $color-python:      darken(#ffe260, 25%);
+
+  @mixin label($color) {
+    @include label-variant($color-default);
+    &:hover {
+      background-color: $color;
+      transition: all 0.1s ease-in-out;
+    }
   }
 
   .label-cpp {
-    @include label-variant(#045088);
+    @include label($color-cpp);
   }
 
   .label-ember {
-    @include label-variant(#f23818);
+    @include label($color-ember);
   }
 
   .label-rails {
-    @include label-variant(#c00);
+    @include label($color-rails);
   }
 
   .label-go {
-    @include label-variant(darken(#90e4e6, 20%));
+    @include label($color-go);
   }
 
   .label-mathematica {
-    @include label-variant(#f4792f);
+    @include label($color-mathematica);
   }
 
   .label-python {
-    @include label-variant(darken(#ffe260, 25%));
+    @include label($color-python);
   }
 }
 
