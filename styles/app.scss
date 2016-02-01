@@ -6,6 +6,7 @@ $font-family-sans-serif: 'Source Sans Pro', sans-serif;
 $headings-font-family: 'Open Sans', sans-serif;
 $font-size-root: 15px;
 $line-color: #ddd;
+$grid-gutter-width: 4rem;
 
 @import 'bootstrap_custom';
 
@@ -17,13 +18,21 @@ body {
 }
 
 h1 {
+  border-bottom: 1px solid $line-color;
   font-weight: 300;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 h2 {
   font-family: $headings-font-family;
   font-size: 1.3em;
   font-weight: 400;
+}
+
+aside h2 {
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
 }
 
 footer {
@@ -44,13 +53,6 @@ footer {
 
 @media print {
   @include show-line;
-}
-
-
-h1 {
-  border-bottom: 1px solid $line-color;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
 }
 
 dt {
@@ -79,7 +81,7 @@ section {
   $duration-width: 7rem;
   $duration-padding: 0.4rem;
 
-  padding-bottom: 1.5em;
+  margin-bottom: 3rem;
   padding-left: $duration-width + $duration-padding;
   padding-top: 1em;
   position: relative;
@@ -104,7 +106,6 @@ section {
   .labels {
     font-size: 1rem;
     margin-left: 0.5rem;
-    line-height: 0.5rem;
   }
 
   $color-default:     lighten($label-default-bg, 20%);
