@@ -2,7 +2,17 @@ $fa-font-path: 'fonts';
 
 @import "font-awesome/scss/variables";
 @import "font-awesome/scss/mixins";
-@import "font-awesome/scss/path";
+
+// @import "font-awesome/scss/path";
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('#{$fa-font-path}/fontawesome.woff?v=#{$fa-version}');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 @import "font-awesome/scss/core";
 // @import "font-awesome/scss/larger";
 // @import "font-awesome/scss/fixed-width";

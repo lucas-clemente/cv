@@ -15,16 +15,21 @@ var cssFiles = compileSass(
   {'outputStyle': 'compressed'}
 );
 
-var faFiles = pickFiles('bower_components/font-awesome/fonts', {
-  srcDir: '/',
-  destDir: '/fonts'
-});
+// var faFiles = pickFiles('bower_components/font-awesome/fonts', {
+//   srcDir: '/',
+//   destDir: '/fonts'
+// });
 
 var fontFiles = pickFiles('fonts', {
   srcDir: '/',
   destDir: '/fonts'
 });
 
-var trees = [cssFiles, publicFiles, faFiles, fontFiles];
+var trees = [
+  cssFiles,
+  publicFiles,
+  // faFiles,
+  fontFiles
+];
 
 module.exports = mergeTrees(trees);
