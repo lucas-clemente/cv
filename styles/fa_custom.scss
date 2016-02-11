@@ -7,7 +7,7 @@ $fa-font-path: 'fonts';
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url('#{$fa-font-path}/fontawesome.woff?v=#{$fa-version}');
+  src: url('#{$fa-font-path}/fontawesome.woff');
   font-weight: normal;
   font-style: normal;
 }
