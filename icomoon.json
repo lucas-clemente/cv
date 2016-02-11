@@ -1,8 +1,8 @@
 {
 	"metadata": {
 		"name": "CV",
-		"lastOpened": 1418773394855,
-		"created": 1454409152340
+		"lastOpened": 1455195417319,
+		"created": 1455195413838
 	},
 	"iconSets": [
 		{
@@ -2019,8 +2019,11 @@
 				},
 				{
 					"id": 393,
-					"order": 0,
-					"name": "cube"
+					"order": 22,
+					"name": "cube",
+					"prevSize": 28,
+					"code": 61874,
+					"tempChar": ""
 				},
 				{
 					"id": 394,
@@ -2363,7 +2366,7 @@
 					"name": "at",
 					"prevSize": 28,
 					"code": 61946,
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"id": 462,
@@ -2381,7 +2384,7 @@
 					"name": "birthday-cake",
 					"prevSize": 28,
 					"code": 61949,
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"id": 465,
@@ -11696,6 +11699,5 @@
 		"showCodes": true,
 		"gridSize": 16
 	},
-	"uid": -1,
-	"time": 1454410149616
+	"uid": -1
 }
