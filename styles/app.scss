@@ -166,13 +166,6 @@ section {
   }
 }
 
-.hello {
-  font-family: $headings-font-family;
-  font-size: 1.25rem;
-  font-weight: 300;
-  margin-bottom: 2rem;
-}
-
 .fa-li {
   // fixes a weird alignment issue
   // TODO improve
@@ -201,5 +194,9 @@ section {
 
   .hello {
     display: none;
+  }
+
+  section {
+    margin-bottom: 1rem;
   }
 }
